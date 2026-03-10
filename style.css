@@ -1,7 +1,7 @@
 /* --- Variables & Reset --- */
 :root {
     --primary: #0066FF; /* Bleu électrique Adef */
-    --primary-hover: #0052cc;
+    --primary-hover: #0ae1f0;
     --bg-color: #ffffff;
     --text-main: #111827;
     --text-light: #6b7280;
@@ -245,4 +245,60 @@ footer {
     padding: 40px;
     color: var(--text-light);
     border-top: 1px solid var(--border);
+}
+
+/* --- Fonctionnement / Process Section --- */
+.process {
+    padding: 80px 5%;               /* Espacement autour */
+    background-color: #f3f4f6;      /* Gris clair pour démarquer */
+    text-align: center;
+    border-radius: 12px;            /* Coins arrondis subtils */
+    margin: 50px auto;              /* Marge autour */
+}
+
+.process h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: var(--text-main);
+}
+
+.process-steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Passe à la ligne sur mobile */
+}
+
+.step {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Ombre douce */
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation hover */
+}
+
+.step:hover {
+    transform: translateY(-5px);              /* Léger flottement */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);  /* Ombre accentuée au hover */
+}
+
+.step-icon {
+    font-size: 40px;       /* Icône grande */
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.step p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.5;
 }
